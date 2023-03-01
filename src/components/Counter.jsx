@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 const Counter = () => {
   const [count, setCount] = useState(0);
   return (
@@ -6,7 +6,7 @@ const Counter = () => {
       <div className="m-auto">
         <div className="text-6xl text-red-600">{count}</div>
         <button
-          className="px-6 py-2 rounded bg-green-800 hover:bg-green-600 text-white"
+          className="rounded bg-green-800 px-6 py-2 text-white hover:bg-green-600"
           type="button"
           onClick={() => setCount((count) => count + 1)}
         >
