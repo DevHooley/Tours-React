@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-200 leading-5 text-sm
+  }
+  main {
+    @apply text-center m-20 
+  }
+  h1,h2,h3,h4 {
+    @apply mb-3 capitalize text-lg
+  }
+  h1 {
+    @apply text-5xl p-4
+  }
+  h2 {
+    @apply text-3xl
+  }
+  h3 {
+    @apply text-xl
+  }
+  h4 {
+    @apply text-sm
+  }
+  p {
+    @apply mb-5 
+  }
+  .section {
+    @apply 
+  }
+  .underline {
+    @apply h-2 w-16 rounded-md bg-blue-500
+  }
+  .btn {
+    @apply inline-block capitalize border-transparent cursor-pointer mt-8 text-xl
+  }
+  .loading {
+    @apply text-center
+  }
+  .title {
+    @apply text-center mb-16
+  }
+  /* .underline {
+    @apply w-24 h-2 ml-auto mr-auto bg-blue-500 underline
+  } */
+  .single-tour {
+    @apply bg-white border-r-2 shadow-md transition-opacity opacity-80 m-2 hover:shadow-slate-900
+  }
+  .single-tour img {
+    @apply w-full h-64 object-cover
+  }
+  .tour-info {
+    @apply w-24 h-1 ml-auto mr-auto
+  }
+  .tour-info h4 {
+    @apply mb-0
+  }
+  .single-tour button {
+    @apply bg-transparent border-transparent capitalize text-base cursor-pointer pl-1 bg-pink-500
+  }
+  .tour-price {
+    @apply bg-pink-500 p-1 border-r-2
+  }
+  .single-tour footer {
+    @apply p-1
+  }
+  .single-tour .delete-btn {
+    @apply block w-48 bg-transparent bg-pink-500 m-1 border-r-2 p-1
+  }
+}
+
