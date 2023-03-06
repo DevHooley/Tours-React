@@ -1,13 +1,74 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-slate-200 leading-5 text-sm
+  h1,h2,h3,h4 {
+    @apply mb-3 capitalize text-lg
+  }
+  h1 {
+    @apply text-5xl p-4 leading-5
+  }
+  h2 {
+    @apply text-4xl
+  }
+  h3 {
+    @apply text-xl
+  }
+  h4 {
+    @apply text-sm font-bold 
+  }
+  section {
+    @apply flex-1 max-w-4xl mx-auto p-10
+  }
+  p {
+    @apply text-left
   }
   main {
-    @apply text-center m-20 
+    @apply min-h-screen items-center bg-slate-100 max-h-screen
+  }
+  section, .title {
+    @apply text-center mb-10 
+  }
+  article, .underline {
+    @apply h-1 w-24 rounded-md bg-sky-500 justify-center container
+  }
+  .tours {
+    @apply grid grid-cols-1 grid-flow-row 
+  }
+  article, .single-tour {
+    @apply bg-white border-r-2 shadow-md transition-opacity opacity-80 
+    m-2 hover:shadow-slate-900 flex-auto
+  }
+  article, .single-tour, img {
+    @apply  h-auto w-auto rounded-md p-2
+  }
+  .loading, h1 {
+    @apply text-center p-10
+  }
+  footer, .tour-info {
+    @apply mb-0 p-4 text-black 
+  }
+  article, .tour-price {
+    @apply bg-blue-200 p-1 w-16 text-sky-700 rounded-lg 
+  }
+  p button {
+    @apply text-sky-600 capitalize border-none pb-2 text-center justify-center container
+  }
+  button, .delete-btn {
+    @apply text-red-600 capitalize border border-red-500 w-32 rounded-md 
+  }
+}
+  
+
+
+
+
+
+/* @layer base {
+  body {
+    @apply bg-slate-200 leading-5 text-sm
   }
   h1,h2,h3,h4 {
     @apply mb-3 capitalize text-lg
@@ -16,7 +77,7 @@
     @apply text-5xl p-4
   }
   h2 {
-    @apply text-3xl
+    @apply text-4xl
   }
   h3 {
     @apply text-xl
@@ -25,49 +86,41 @@
     @apply text-sm
   }
   p {
-    @apply mb-5 
+    @apply mb-5 bg-slate-500
   }
-  .section {
-    @apply 
+  main {
+    @apply text-center m-20 
   }
-  .underline {
-    @apply h-2 w-16 rounded-md bg-blue-500
+  section, .title {
+    @apply text-center mb-10 
   }
-  .btn {
-    @apply inline-block capitalize border-transparent cursor-pointer mt-8 text-xl
+  article, .underline {
+    @apply h-1 w-20 rounded-md bg-sky-500 justify-center container
   }
-  .loading {
-    @apply text-center
+  article, .single-tour {
+    @apply bg-white border-r-2 shadow-md transition-opacity opacity-80 
+    m-2 hover:shadow-slate-900 
   }
-  .title {
-    @apply text-center mb-16
+  article, .single-tour, img {
+    @apply  h-64  
   }
-  /* .underline {
-    @apply w-24 h-2 ml-auto mr-auto bg-blue-500 underline
-  } */
-  .single-tour {
-    @apply bg-white border-r-2 shadow-md transition-opacity opacity-80 m-2 hover:shadow-slate-900
+  article, .tour-info {
+    @apply w-24 h-1 ml-auto mr-auto p-4 
   }
-  .single-tour img {
-    @apply w-full h-64 object-cover
+  button .single-tour {
+    @apply text-base  bg-sky-400 rounded-lg border border-sky-700  outline outline-2 outline-sky-900 w-32 hover:outline-4 hover:scale-110 transition active:bg-sky-700 focus:outline-sky-800 focus:ring focus:ring-sky-500 focus:opacity-70 cursor-pointer
   }
-  .tour-info {
-    @apply w-24 h-1 ml-auto mr-auto
+  footer, .tour-info, h4 {
+    @apply mb-0 p-4
   }
-  .tour-info h4 {
-    @apply mb-0
+  button, .delete-btn {
+    @apply  text-base  bg-pink-400 rounded-lg border border-pink-700  outline outline-2 outline-pink-900 w-32 hover:outline-4 hover:scale-110 transition active:bg-pink-700 focus:outline-pink-800 focus:ring focus:ring-pink-500 focus:opacity-70 cursor-pointer;
   }
-  .single-tour button {
-    @apply bg-transparent border-transparent capitalize text-base cursor-pointer pl-1 bg-pink-500
+  article, .tour-price {
+    @apply bg-blue-500 p-1 border-r-2 
   }
-  .tour-price {
-    @apply bg-pink-500 p-1 border-r-2
-  }
-  .single-tour footer {
+  article, .single-tour footer {
     @apply p-1
   }
-  .single-tour .delete-btn {
-    @apply block w-48 bg-transparent bg-pink-500 m-1 border-r-2 p-1
-  }
-}
+} */
 
